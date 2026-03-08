@@ -64,22 +64,81 @@ Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=flat&log
 
 ---
 
-# 🤖 Autonomous QA Architecture
+# 🤖 AI & Agentic Architecture (Autonomous QA Platform)
+
+The Autonomous QA Platform implements a **multi-agent architecture** where specialized AI agents collaborate to design, execute and analyze tests automatically.
+
+The platform integrates **LLMs, QA frameworks, observability systems and CI/CD pipelines** to create a fully autonomous testing loop.
+
+---
+
+## 🧠 AI Stack
+
+![OpenAI](https://img.shields.io/badge/OpenAI-LLM-412991?style=flat&logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Agent_Framework-121212?style=flat)
+![Python](https://img.shields.io/badge/Python-AI_Runtime-3776AB?style=flat&logo=python&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-Test_Automation-2EAD33?style=flat&logo=playwright&logoColor=white)
+![k6](https://img.shields.io/badge/k6-Performance_Testing-7D64FF?style=flat&logo=k6&logoColor=white)
+![Elastic](https://img.shields.io/badge/ELK-Observability-005571?style=flat&logo=elastic&logoColor=white)
+
+---
+
+# 🧠 Autonomous QA Agent Architecture
+
+```mermaid
+flowchart TD
+
+Developer --> GitHub
+GitHub --> CI_CD
+
+CI_CD --> Orchestrator
+
+Orchestrator --> PlannerAgent
+Orchestrator --> ExecutionAgent
+Orchestrator --> AnalysisAgent
+
+PlannerAgent --> TestGenerator
+PlannerAgent --> TestStrategy
+
+ExecutionAgent --> UITestAgent
+ExecutionAgent --> APITestAgent
+ExecutionAgent --> PerfTestAgent
+
+UITestAgent --> Playwright
+APITestAgent --> APIFramework
+PerfTestAgent --> k6
+
+Playwright --> Observability
+APIFramework --> Observability
+k6 --> Observability
+
+Observability --> DefectAnalysisAgent
+DefectAnalysisAgent --> RootCauseAgent
+
+RootCauseAgent --> LearningAgent
+
+LearningAgent --> KnowledgeBase
+
+KnowledgeBase --> PlannerAgent
+```
+
+---
+
+# 🤖 Autonomous Testing Agent Flow
 
 ``` mermaid
 flowchart LR
 
-Developer --> CI/CD
-CI/CD --> TestOrchestrator
-TestOrchestrator --> AI_Test_Generator
-AI_Test_Generator --> UI_Tests
-AI_Test_Generator --> API_Tests
-
-UI_Tests --> Observability
-API_Tests --> Observability
-
-Observability --> AI_Defect_Analyzer
-AI_Defect_Analyzer --> QA_Dashboard
+Feature_Request --> PlanningAgent
+PlanningAgent --> TestGenerationAgent
+TestGenerationAgent --> ExecutionAgents
+ExecutionAgents --> ResultCollector
+ResultCollector --> AnalysisAgent
+AnalysisAgent --> DefectClassifier
+DefectClassifier --> RootCauseAgent
+RootCauseAgent --> LearningAgent
+LearningAgent --> TestOptimization
+TestOptimization --> PlanningAgent
 ```
 
 ---
@@ -106,43 +165,41 @@ Observability --> ELK
 
 ---
 
-# 📌 Featured Repositories
+# 🧩 AI Agents in the Platform
 
-| Repository                      | Description                                      |
-| ------------------------------- | ------------------------------------------------ |
-| Playwright Automation Framework | Enterprise scale UI and API automation           |
-| Performance Testing Platform    | Unified orchestration platform for k6 and JMeter |
-| AI Test Generator               | LLM driven automated test case generation        |
-| Autonomous QA Architecture      | Reference architecture for AI powered testing    |
-| Cloud Testing Utilities         | Tools for SaaS and microservices testing         |
-
----
-
-# 📊 GitHub Analytics
-
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=ashwin-ak&show_icons=true&theme=default&hide_border=true" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashwin-ak&layout=compact&hide_border=true" /> </p>
+| Agent                | Responsibility                                      |
+| -------------------- | --------------------------------------------------- |
+| Planner Agent        | Understand feature changes and define test strategy |
+| Test Generator Agent | Generate test cases using LLMs                      |
+| Execution Agents     | Run UI, API and performance tests                   |
+| Analysis Agent       | Analyze failures and detect anomalies               |
+| Root Cause Agent     | Identify root cause using logs and traces           |
+| Learning Agent       | Improve test coverage based on past runs            |
 
 ---
 
-# 🔥 Contribution Graph
+🏗 Platform Components
 
-<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=ashwin-ak&theme=github-light"/> </p>
+| Component           | Technology                    |
+| ------------------- | ----------------------------- |
+| Test Automation     | Playwright                    |
+| API Testing         | REST frameworks               |
+| Performance Testing | k6 / JMeter                   |
+| Observability       | ELK / Grafana                 |
+| Agent Framework     | LangChain / Python            |
+| LLM Integration     | OpenAI APIs                   |
+| CI/CD Integration   | GitHub Actions / Azure DevOps |
 
 ---
 
-# 📈 Activity Timeline
+🚀 AI Capabilities Implemented
 
-<p align="center"> <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashwin-ak&theme=github"/> </p>
-
----
-
-# 🚀 Current Focus
-
-• Autonomous QA platforms
-• AI agent based testing
-• Playwright enterprise frameworks
-• Performance engineering platforms
-• Observability driven QA
+✔ AI-driven test case generation
+✔ Autonomous regression selection
+✔ Defect clustering using LLMs
+✔ Root cause analysis from logs
+✔ Intelligent test prioritization
+✔ Performance anomaly detection
 
 ---
 
