@@ -1,5 +1,14 @@
 <h1 align="center">Ashwin Kulkarni</h1>
 
+<p align="center">
+  <a href="https://in.linkedin.com/in/ashwinakulkarni">
+    <img src="https://img.shields.io/badge/LinkedIn-Ashwin_Kulkarni-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a> 
+  <a href="https://github.com/ashwin-ak">
+    <img src="https://img.shields.io/badge/GitHub-ashwin--ak-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
+
 <h3 align="center">
 Director / Head of Quality Engineering • Cloud-Native Testing • AI Driven QA
 </h3>
@@ -74,6 +83,9 @@ The platform integrates **LLMs, QA frameworks, observability systems and CI/CD p
 
 ## 🧠 AI Stack
 
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-AI_Pair_Programmer-000000?style=flat&logo=github&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_Code-AI_Engineering_Assistant-6B4EFF?style=flat)
+![VS Code](https://img.shields.io/badge/VS_Code-Development_Environment-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-LLM-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-Agent_Framework-121212?style=flat)
 ![Python](https://img.shields.io/badge/Python-AI_Runtime-3776AB?style=flat&logo=python&logoColor=white)
@@ -83,10 +95,10 @@ The platform integrates **LLMs, QA frameworks, observability systems and CI/CD p
 
 ---
 
-# 🧠 Autonomous QA Agent Architecture
+## 🧠 Autonomous QA Agent Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
 
 Developer --> GitHub
 GitHub --> CI_CD
@@ -124,7 +136,7 @@ KnowledgeBase --> PlannerAgent
 
 ---
 
-# 🤖 Autonomous Testing Agent Flow
+## 🤖 Autonomous Testing Agent Flow
 
 ``` mermaid
 flowchart LR
@@ -143,7 +155,7 @@ TestOptimization --> PlanningAgent
 
 ---
 
-# 🏗 Performance Testing Platform Architecture
+## 🏗 Performance Testing Platform Architecture
 
 ``` mermaid
 flowchart LR
@@ -189,6 +201,10 @@ Observability --> ELK
 | Agent Framework     | LangChain / Python            |
 | LLM Integration     | OpenAI APIs                   |
 | CI/CD Integration   | GitHub Actions / Azure DevOps |
+| GitHub Copilot | AI pair programmer for writing automation frameworks    |
+| Claude Code    | Architecture reasoning and complex code generation      |
+| OpenAI APIs    | LLM integration for test generation and defect analysis |
+| VS Code        | AI-enabled development environment                      |
 
 ---
 
@@ -200,12 +216,6 @@ Observability --> ELK
 ✔ Root cause analysis from logs
 ✔ Intelligent test prioritization
 ✔ Performance anomaly detection
-
----
-
-# 🔗 Connect
-
-<a href="https://linkedin.com/in/ashwinakulkarni"> <img src="https://img.shields.io/badge/LinkedIn-Ashwin Kulkarni-0A66C2?style=flat&logo=linkedin&logoColor=white"/> </a> <a href="https://github.com/ashwin-ak"> <img src="https://img.shields.io/badge/GitHub-Ashwin Kulkarni-181717?style=flat&logo=github&logoColor=white"/> </a>
 
 ---
 
